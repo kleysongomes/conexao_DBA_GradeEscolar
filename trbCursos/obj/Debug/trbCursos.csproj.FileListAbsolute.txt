@@ -1,0 +1,10 @@
+C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\bin\Debug\trbCursos.exe.config
+C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\bin\Debug\trbCursos.exe
+C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\bin\Debug\trbCursos.pdb
+C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\obj\Debug\trbCursos.csprojAssemblyReference.cache
+C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\obj\Debug\trbCursos.Form1.resources
+C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\obj\Debug\trbCursos.Properties.Resources.resources
+C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\obj\Debug\trbCursos.csproj.GenerateResource.cache
+C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\obj\Debug\trbCursos.csproj.CoreCompileInputs.cache
+C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\obj\Debug\trbCursos.exe
+C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\obj\Debug\trbCursos.pdb
