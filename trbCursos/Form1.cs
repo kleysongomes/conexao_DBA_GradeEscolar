@@ -20,12 +20,9 @@ namespace trbCursos
         OleDbCommand comandoInsert = new OleDbCommand();
 
         OleDbDataReader dr;
-        OleDbDataReader dr2;
 
-        int intCodCurso;
         string strNomeCurso;
-        //string strCodDisciplina;
-
+        string strNomeDisciplina;
         public Form1()
         {
             InitializeComponent();
@@ -33,6 +30,9 @@ namespace trbCursos
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: esta linha de código carrega dados na tabela 'dbCursoDataSet1.tbGrade'. Você pode movê-la ou removê-la conforme necessário.
+            this.tbGradeTableAdapter.Fill(this.dbCursoDataSet1.tbGrade);
+            
             //Conexao com Banco Access 2002-2003
             conexao.ConnectionString = @"Provider=Microsoft.Jet.OLEDB.4.0; Data Source=C:\Users\Public\dbCurso.mdb; User Id=admin; Password=";
             comandoSelect.Connection = conexao;
@@ -46,13 +46,16 @@ namespace trbCursos
 
             conexao.Close();
         }
-        
-        private void InserirCodigoC()
+       
+        private void InserirCodigo()
         {
-            clbCurso.Items.Clear();
             try
             {
-                string strNoQuery = "insert into tbGrade (txtCodigoC) values ("+ intCodCurso +")";
+                string strNoQuery = 
+                "INSERT INTO tbGrade (txtCodCurso,txtCodDisciplina) " +
+                "SELECT  txtCodigoC, txtCodigoD FROM  tbCursos, tbDisciplinas " +
+                "WHERE txtNomeC = '"+ strNomeCurso + "' AND txtNomeD = '" + strNomeDisciplina + "';";
+
                 comandoInsert.CommandText = strNoQuery;
                 comandoInsert.ExecuteNonQuery();
             }
@@ -60,8 +63,8 @@ namespace trbCursos
             {
                 MessageBox.Show(e.Message.ToString());
             }
+            
         }
-        
         private void CarregarCursos()
         {
             clbCurso.Items.Clear();
@@ -107,41 +110,28 @@ namespace trbCursos
             {
                 MessageBox.Show(e.Message.ToString());
             }
-
-
         }
 
         private void ClbCurso_ItemCheck(object sender, ItemCheckEventArgs e)
         {
-            intCodCurso = Convert.ToInt32(clbCurso.SelectedIndex.ToString());
-            strNomeCurso = clbCurso.Text;
+            strNomeCurso = clbCurso.Text.ToString();
             
+        }
 
-
+        private void ClbDisciplinas_ItemCheck(object sender, ItemCheckEventArgs e)
+        {
+           
+           strNomeDisciplina = clbDisciplinas.Text.ToString();
+           
         }
 
         private void BtnGerar_Click(object sender, EventArgs e)
         {
-            //Quando click é consultado o codigo do curso usando como where o curso marcado 
-            string strQuery = "select txtCodigoC from tbCursos where txtNomeC = '" + strNomeCurso +"'";
-            comandoSelect.CommandText = strQuery;
-            conexao.Open();
-            dr2 = comandoSelect.ExecuteReader();
+            clbCurso.ClearSelected();
+            clbDisciplinas.ClearSelected();
+            InserirCodigo();
+            //dgvGrade
 
-            if (dr2.HasRows)
-            {
-               while (dr2.Read())
-               {
-                 string textoteste = dr2[0].ToString();
-                 MessageBox.Show(textoteste);
-               }
-            }
-            dr2.Close();
-            conexao.Close(); //fecha conexao para poder ser selecionada outro curso 
-            //Limpar o curso que está marcado perguntar ao mestre 
-            //#
-
-            conexaoInsert.Close();
         }
     }
 }
