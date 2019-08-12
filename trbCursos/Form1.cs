@@ -47,7 +47,7 @@ namespace trbCursos
             conexao.Close();
         }
        
-        private void InserirCodigo()
+        private void GerarGrade()
         {
             try
             {
@@ -129,9 +129,20 @@ namespace trbCursos
         {
             clbCurso.ClearSelected();
             clbDisciplinas.ClearSelected();
-            InserirCodigo();
-            //dgvGrade
+            GerarGrade();
 
+            foreach (int checados in clbCurso.CheckedIndices)
+            {
+                clbCurso.SetItemChecked(checados, false);
+            }
+
+            foreach (int checados in clbDisciplinas.CheckedIndices)
+            {
+                clbDisciplinas.SetItemChecked(checados, false);
+                
+
+            }
+            MessageBox.Show("Grade gerada","Confirmação");
         }
     }
 }

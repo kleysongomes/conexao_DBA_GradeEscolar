@@ -33,14 +33,14 @@
             this.clbDisciplinas = new System.Windows.Forms.CheckedListBox();
             this.btnGerar = new System.Windows.Forms.Button();
             this.dgvGrade = new System.Windows.Forms.DataGridView();
-            this.dbCursoDataSet1 = new trbCursos.dbCursoDataSet1();
-            this.tbGradeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.tbGradeTableAdapter = new trbCursos.dbCursoDataSet1TableAdapters.tbGradeTableAdapter();
             this.txtCodCursoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtCodDisciplinaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tbGradeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dbCursoDataSet1 = new trbCursos.dbCursoDataSet1();
+            this.tbGradeTableAdapter = new trbCursos.dbCursoDataSet1TableAdapters.tbGradeTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrade)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbCursoDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGradeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbCursoDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
             // clbCurso
@@ -84,21 +84,6 @@
             this.dgvGrade.Size = new System.Drawing.Size(240, 424);
             this.dgvGrade.TabIndex = 3;
             // 
-            // dbCursoDataSet1
-            // 
-            this.dbCursoDataSet1.DataSetName = "dbCursoDataSet1";
-            this.dbCursoDataSet1.EnforceConstraints = false;
-            this.dbCursoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // tbGradeBindingSource
-            // 
-            this.tbGradeBindingSource.DataMember = "tbGrade";
-            this.tbGradeBindingSource.DataSource = this.dbCursoDataSet1;
-            // 
-            // tbGradeTableAdapter
-            // 
-            this.tbGradeTableAdapter.ClearBeforeFill = true;
-            // 
             // txtCodCursoDataGridViewTextBoxColumn
             // 
             this.txtCodCursoDataGridViewTextBoxColumn.DataPropertyName = "txtCodCurso";
@@ -111,11 +96,26 @@
             this.txtCodDisciplinaDataGridViewTextBoxColumn.HeaderText = "txtCodDisciplina";
             this.txtCodDisciplinaDataGridViewTextBoxColumn.Name = "txtCodDisciplinaDataGridViewTextBoxColumn";
             // 
+            // tbGradeBindingSource
+            // 
+            this.tbGradeBindingSource.DataMember = "tbGrade";
+            this.tbGradeBindingSource.DataSource = this.dbCursoDataSet1;
+            // 
+            // dbCursoDataSet1
+            // 
+            this.dbCursoDataSet1.DataSetName = "dbCursoDataSet1";
+            this.dbCursoDataSet1.EnforceConstraints = false;
+            this.dbCursoDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // tbGradeTableAdapter
+            // 
+            this.tbGradeTableAdapter.ClearBeforeFill = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 447);
             this.Controls.Add(this.dgvGrade);
             this.Controls.Add(this.btnGerar);
             this.Controls.Add(this.clbDisciplinas);
@@ -124,8 +124,8 @@
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvGrade)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dbCursoDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.tbGradeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dbCursoDataSet1)).EndInit();
             this.ResumeLayout(false);
 
         }

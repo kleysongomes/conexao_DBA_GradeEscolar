@@ -8,3 +8,13 @@ C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\obj\
 C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\obj\Debug\trbCursos.csproj.CoreCompileInputs.cache
 C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\obj\Debug\trbCursos.exe
 C:\Kleyson\Arquivos_kleyson\T.I\INFO02\Programação para Desktop\trbCursos\obj\Debug\trbCursos.pdb
+C:\Repositorios\conexao_DBaccess_GradeEscolar\trbCursos\bin\Debug\trbCursos.exe.config
+C:\Repositorios\conexao_DBaccess_GradeEscolar\trbCursos\bin\Debug\trbCursos.exe
+C:\Repositorios\conexao_DBaccess_GradeEscolar\trbCursos\bin\Debug\trbCursos.pdb
+C:\Repositorios\conexao_DBaccess_GradeEscolar\trbCursos\obj\Debug\trbCursos.csprojAssemblyReference.cache
+C:\Repositorios\conexao_DBaccess_GradeEscolar\trbCursos\obj\Debug\trbCursos.Form1.resources
+C:\Repositorios\conexao_DBaccess_GradeEscolar\trbCursos\obj\Debug\trbCursos.Properties.Resources.resources
+C:\Repositorios\conexao_DBaccess_GradeEscolar\trbCursos\obj\Debug\trbCursos.csproj.GenerateResource.cache
+C:\Repositorios\conexao_DBaccess_GradeEscolar\trbCursos\obj\Debug\trbCursos.csproj.CoreCompileInputs.cache
+C:\Repositorios\conexao_DBaccess_GradeEscolar\trbCursos\obj\Debug\trbCursos.exe
+C:\Repositorios\conexao_DBaccess_GradeEscolar\trbCursos\obj\Debug\trbCursos.pdb
